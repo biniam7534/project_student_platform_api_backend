@@ -29,7 +29,7 @@ const Sidebar = () => {
                     <img src="https://img.icons8.com/fluency/48/graduation-cap.png" alt="Logo" className="w-8 h-8" />
                 </div>
                 <div>
-                    <h1 className="text-xl font-bold leading-tight">Edu-Care</h1>
+                    <h1 className="text-xl font-bold leading-tight">Edu-Platform</h1>
                     <p className="text-[10px] opacity-70">School Dashboard</p>
                 </div>
                 <Menu className="ml-auto w-5 h-5 opacity-70 cursor-pointer" />
@@ -42,8 +42,8 @@ const Sidebar = () => {
                         <button
                             key={item.label}
                             className={`w-full flex items-center gap-4 px-4 py-3 rounded-xl transition-all ${item.active
-                                    ? 'bg-white text-[#4f35a1] font-semibold shadow-lg'
-                                    : 'hover:bg-white/10 text-white/70'
+                                ? 'bg-white text-[#4f35a1] font-semibold shadow-lg'
+                                : 'hover:bg-white/10 text-white/70'
                                 }`}
                         >
                             <item.icon className={`w-5 h-5 ${item.active ? 'text-[#4f35a1]' : 'text-white/70'}`} />
