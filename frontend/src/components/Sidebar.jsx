@@ -8,7 +8,8 @@ import {
     Calendar,
     Settings,
     HelpCircle,
-    Menu
+    Menu,
+    BookOpen
 } from 'lucide-react';
 
 const Sidebar = () => {
@@ -16,6 +17,7 @@ const Sidebar = () => {
         { icon: LayoutDashboard, label: 'Dashboard', active: true },
         { icon: Users, label: 'Students' },
         { icon: UserSquare2, label: 'Teachers' },
+        { icon: BookOpen, label: 'Courses' },
         { icon: CalendarDays, label: 'Events' },
         { icon: Wallet, label: 'Finance' },
         { icon: Calendar, label: 'Calendar' },

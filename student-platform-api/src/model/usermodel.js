@@ -6,9 +6,16 @@ const userSchema = new mongoose.Schema({
   password: String,
   role: {
     type: String,
-    enum: ["student", "parent", "teacher", "admin"],
+    enum: ["student", "parent", "teacher", "admin", "staff"],
     default: "student"
   },
+  // Student specific fields
+  parents: String,
+  phone: String,
+  className: String, // e.g., '7th'
+  grade: String, // e.g., 'A+'
+  status: { type: String, enum: ["Paid", "Unpaid"], default: "Unpaid" },
+  image: String,
   refreshToken: { type: String, select: false }
 }, { timestamps: true });
 
